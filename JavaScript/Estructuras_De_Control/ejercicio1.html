@@ -1,0 +1,30 @@
+<!--Crea una página HTML, con nombre ejercicio1.html, en la que se pida por
+pantalla dos números y se escriba el resultado de la suma. Utilizaremos la
+función isNaN() para comprobar que los datos introducidos son numéricos, en
+caso de que alguno no lo sea se escribirá un mensaje avisando del hecho. Está
+función devuelve true si el valor no es numérico y false en caso contrario. Esta
+comprobación, de ahora en adelante, la realizaremos siempre que solicitemos
+valores numéricos por pantalla-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero = prompt("Dime un número");
+        var numero2 = prompt("Dime otro número");
+        if (isNaN(numero || numero2))
+        {
+        alert("El valor no es numérico");
+        alert("True")
+        }
+        var doble = parseInt(numero) + parseInt(numero2);
+        alert("La suma es " + doble);
+        alert("False")
+    </script>
+</body>
+</html>

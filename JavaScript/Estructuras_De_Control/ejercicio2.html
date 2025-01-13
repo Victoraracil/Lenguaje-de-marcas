@@ -1,0 +1,35 @@
+<!--Crea una página HTML, con nombre ejercicio2.html, en la que se pidan dos
+números por pantalla y se escriba el qué número es el mayor. En caso de ser
+iguales deberá escribirse el número e indicar que ambos son iguales.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero = prompt("Dime un número");
+        var numero2 = prompt("Dime otro número");
+
+        if (isNaN(numero || numero2))
+        {
+        alert("El valor no es numérico");
+        }
+        var n1 = parseInt(numero)
+        var n2 = parseInt(numero2)
+        if (n1 > n2){
+            alert(n1 + " es el numero mayor")
+        }
+        else if(n1 == n2){
+            alert("Ambos numeros son iguales: " + n1)
+        }
+        else{
+            alert(n2 + " es el numero mayor")
+        }
+    </script>
+</body>
+</html>
