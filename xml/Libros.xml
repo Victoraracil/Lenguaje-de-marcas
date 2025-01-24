@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<librerias>
+    <libreria nombre="Amazon">
+        <libro>
+            <isbn>978-0137081073</isbn>
+            <editorial>Addison-Wesley</editorial>
+            <titulo>XML in a Nutshell</titulo>
+            <fechaPublicacion>2012-02-22</fechaPublicacion>
+            <nivel>Intermedio</nivel>
+            <paginaWeb>https://www.amazon.com/XML-in-a-Nutshell/dp/0137081073</paginaWeb>
+            <precio moneda="USD">49.99</precio>
+            <autores>
+                <autor>Elliotte Rusty Harold</autor>
+                <autor>W. Scott Means</autor>
+            </autores>
+        </libro>
+        <libro>
+            <isbn>978-0596007645</isbn>
+            <editorial>O'Reilly Media</editorial>
+            <titulo>Learning XML</titulo>
+            <fechaPublicacion>2003-09-01</fechaPublicacion>
+            <nivel>Básico</nivel>
+            <paginaWeb>https://www.amazon.com/Learning-XML-Essential-Information/dp/0596007647</paginaWeb>
+            <precio moneda="USD">39.95</precio>
+            <autores>
+                <autor>Erik T. Ray</autor>
+            </autores>
+        </libro>
+        <libro>
+            <isbn>978-0596805477</isbn>
+            <editorial>O'Reilly Media</editorial>
+            <titulo>Advanced XML Applications</titulo>
+            <fechaPublicacion>2010-04-15</fechaPublicacion>
+            <nivel>Avanzado</nivel>
+            <paginaWeb>https://www.amazon.com/Advanced-XML-Applications/dp/0596805477</paginaWeb>
+            <precio moneda="USD">59.99</precio>
+            <autores>
+                <autor>David Hunter</autor>
+                <autor>Jeff Rafter</autor>
+            </autores>
+        </libro>
+    </libreria>
+    <libreria nombre="La Casa del Libro">
+        <libro>
+            <isbn>978-8441519940</isbn>
+            <editorial>Anaya Multimedia</editorial>
+            <titulo>Aprende XML</titulo>
+            <fechaPublicacion>2011-06-15</fechaPublicacion>
+            <nivel>Básico</nivel>
+            <paginaWeb>https://www.casadellibro.com/aprende-xml/9788441519940</paginaWeb>
+            <precio moneda="EUR">29.95</precio>
+            <autores>
+                <autor>José M. Anguita</autor>
+            </autores>
+        </libro>
+        <libro>
+            <isbn>978-8441520953</isbn>
+            <editorial>Anaya Multimedia</editorial>
+            <titulo>XML avanzado</titulo>
+            <fechaPublicacion>2013-05-10</fechaPublicacion>
+            <nivel>Avanzado</nivel>
+            <paginaWeb>https://www.casadellibro.com/xml-avanzado/9788441520953</paginaWeb>
+            <precio moneda="EUR">49.95</precio>
+            <autores>
+                <autor>Manuel Lázaro</autor>
+                <autor>Juan Pérez</autor>
+            </autores>
+        </libro>
+        <libro>
+            <isbn>978-8426734567</isbn>
+            <editorial>Ediciones Deusto</editorial>
+            <titulo>XML para desarrolladores</titulo>
+            <fechaPublicacion>2015-10-20</fechaPublicacion>
+            <nivel>Intermedio</nivel>
+            <paginaWeb>https://www.casadellibro.com/xml-desarrolladores/9788426734567</paginaWeb>
+            <precio moneda="EUR">39.95</precio>
+            <autores>
+                <autor>Carlos García</autor>
+            </autores>
+        </libro>
+    </libreria>
+</librerias>
