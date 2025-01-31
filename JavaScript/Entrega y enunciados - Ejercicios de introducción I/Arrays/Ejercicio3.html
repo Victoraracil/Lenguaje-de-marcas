@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=xº, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*Crea tres arrays, uno que contenga el nombre del alumno, otro con las notas
+        obtenidas por un alumno y otro con las asignaturas en las que ha obtenido cada
+        una de las notas. Seguidamente, asocia cada una de las notas a las asignaturas
+        de modo que la nota situada en la posición 0 del array corresponda a la asigna-
+        tura situada en la posición 0.
+        Realiza el mismo ejercicio, y guárdalo como ejercicio3a.html, pero usando un
+        solo array que contenga en cada posición los tres datos a la vez.
+        Se debe visualizar el contenido en ambos casos con el siguiente formato:
+        El alumno …….. tiene un ….. en el módulo ….*/
+        let alumno = ["victor"]
+        let notas = [6, 6, 5, 9, 5, 5, 5, 5]
+        let asignaturas = ["Fol" , "Sistemas Informaticos", "Bases de datos", "Ingles", 
+                           "Programacion", "Lenguaje de marcas", "Entornos de desarrollo",
+                           "proyecto intermodular" ]
+    
+        for(let i= 0; i < asignaturas.length; i++){
+            document.writeln("<p> El alumno " + alumno[0] + " tiene un " + notas[i] + " en el módulo " + asignaturas[i] + "<p>")
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
