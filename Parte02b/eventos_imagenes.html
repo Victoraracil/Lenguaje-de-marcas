@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos con imágenes</title>
+    <style>
+        div
+        {
+            margin-top: 100px;
+            text-align: center;
+        }
+        img
+        {
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        window.addEventListener('load', function() {
+            let imagenes = document.querySelectorAll("img");
+            imagenes.forEach(imagen => {
+                imagen.addEventListener('mouseenter', function() {
+                    this.style.width = "200px";
+                    this.style.height = "200px";
+                    this.style.border = "3px solid red";
+                });
+                imagen.addEventListener('mouseleave', function() {
+                    this.style.width = "100px";
+                    this.style.height = "100px";
+                    this.style.border = "none";
+                });
+            });
+        });
+    </script>    
+</head>
+<body>
+    <div>
+        <img src="img/logo_html.png">
+        <img src="img/logo_css.png">
+        <img src="img/logo_javascript.png">
+    </div>
+</body>
+</html>

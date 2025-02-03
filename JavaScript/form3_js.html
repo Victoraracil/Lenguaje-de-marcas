@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Form 3</title>
+    <style>
+        label
+        {
+            display: block;
+        }     
+        input:invalid
+        {
+            background-color: red;
+        }   
+    </style>
+</head>
+<body>
+    <h1>Formulario 3</h1>
+    <form name="form3" id="form3" action="pagina.php" method="post">
+        <label>
+            Login: 
+            <input type="text" name="login" id="login" required>
+        </label>
+        <label>
+            Password:
+            <input type="password" name="password" pattern="[A-Za-z0-9]{8}[A-Za-z0-9]*" id="password" required>
+        </label>
+        <label>
+            Repetir password:
+            <input type="password" name="password2" id="password2" required>
+        </label>
+        <label>
+            E-mail:
+            <input type="email" name="email" id="email" required>
+        </label>
+        <input type="submit" value="Enviar" id="enviar">
+    </form>
+
+    <script>
+        let pass = document.getElementById("password");
+        let pass2 = document.getElementById("password2");
+
+        pass.addEventListener("invalid", function()
+        {
+            if(pass.validity.valueMissing)
+            {
+                pass.setCustomValidity("El password no puede estar vacío");
+            }
+            else if (pass.validity.patternMismatch)
+            {
+                pass.setCustomValidity("El password debe tener al menos 8 caracteres, y sólo pueden ser letras y números");
+            }
+        });
+        pass.addEventListener("input", function()
+        {
+            pass.setCustomValidity("");
+            if (pass.value != pass2.value)
+            {
+                pass2.setCustomValidity("Los passwords no coinciden");
+            }
+            else
+            {
+                pass2.setCustomValidity("");
+            }
+        });
+
+        pass2.addEventListener("input", function()
+        {
+            if (pass.value != pass2.value)
+            {
+                pass2.setCustomValidity("Los passwords no coinciden");
+            }
+            else
+            {
+                pass2.setCustomValidity("");
+            }
+        });
+    </script>
+</body>
+</html>

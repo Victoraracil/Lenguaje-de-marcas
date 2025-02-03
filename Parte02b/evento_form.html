@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio eventos formulario</title>
+    <style>
+        body
+        {
+            font-family: Arial;
+            margin: 20px 20%;
+        }
+        label
+        {
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro de usuario</h1>
+    <form action="pagina.php">
+        <label>
+            Nombre: 
+            <input type="text" name="nombre" id="nombre">
+        </label>
+        <label>
+            Email: 
+            <input type="email" name="email" id="email">
+        </label>
+        <input type="submit" value="Enviar">
+    </form>
+    <script>
+        function definirEventos(elemento)
+        {
+            elemento.addEventListener("blur", function() {
+                if (elemento.value == "")
+                {
+                    elemento.style.backgroundColor = "red";
+                }
+                else
+                {
+                    elemento.style.backgroundColor = "white";
+                }
+            });
+            elemento.addEventListener("focus", function() {
+                elemento.style.backgroundColor = "yellow";
+            });
+        }
+
+        let nombre = document.getElementById("nombre");
+        let email = document.getElementById("email");
+        definirEventos(nombre);
+        definirEventos(email);
+    </script>
+</body>
+</html>
