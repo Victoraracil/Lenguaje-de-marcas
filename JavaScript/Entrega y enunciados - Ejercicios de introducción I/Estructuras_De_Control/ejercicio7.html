@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var password = "1234";
+        var intentos = 0;
+        while(intentos > -1)
+        {
+            var pass = prompt("Introduce la contraseña");
+            if(pass == password || pass == "merindo")
+            {
+                alert("Enhora buena, has acertado la contraseña");
+                alert("Total de intentos: " + intentos);
+                break;
+            }
+            else
+            {
+                alert("Contraseña incorrecta");
+                intentos++;
+            }
+        }
+    </script>
+</body>
+</html>

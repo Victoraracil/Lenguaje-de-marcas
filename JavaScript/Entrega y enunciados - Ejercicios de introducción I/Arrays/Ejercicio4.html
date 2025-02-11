@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor</title>
+</head>
+<body>
+    <script>
+        let diccionario = [];
+        do
+        {
+            var opcion = prompt("0. Salir \n1. Insertar palabra \n2. Modificar palabra \n3. Mostrar diccionario");
+            opcion = parseInt(opcion);
+            switch(opcion)
+            {
+                case 1:
+                insertarPalabra(prompt("Introduce la palabra en español"), prompt("Introduce la palabra en ingles"));
+                break;
+                case 2:
+                modificarPalabra(prompt("Introduce la palabra en español"), prompt("Introduce la nueva palabra en ingles"));
+                break;
+                case 3:
+                mostrarDiccionario();
+                break;
+                default:
+                alert("Opcion no valida");
+                break;
+            }
+            
+        }while (opcion!= 0)
+        
+        
+
+        function insertarPalabra(espanol, ingles) {
+            if (!diccionario.some(palabra => palabra.espanol === espanol)) {
+                diccionario.push({ espanol, ingles });
+                diccionario.sort((a, b) => a.espanol.localeCompare(b.espanol));
+                alert(`Palabra "${espanol}" insertada correctamente.`);
+            } else {
+                alert(`La palabra "${espanol}" ya está en el diccionario.`);
+            }
+        }
+
+        function modificarPalabra(espanol, nuevoIngles) {
+            var palabra = diccionario.find(palabra => palabra.espanol === espanol);
+            if (palabra) {
+                palabra.ingles = nuevoIngles;
+                alert(`Palabra "${espanol}" modificada correctamente.`);
+            } else {
+                alert(`La palabra "${espanol}" no se encuentra en el diccionario.`);
+            }
+        }
+
+        function mostrarDiccionario() {
+            alert("Diccionario:");
+            diccionario.forEach(palabra => {
+                alert(`${palabra.espanol} - ${palabra.ingles}`);
+            });
+        }
+        
+    </script>
+</body>
+</html>

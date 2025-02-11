@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        analizarCadena(prompt("Introduce una cadena de texto"));
+
+        function analizarCadena(cadena) {
+            let mayusculas = 0;
+            let minusculas = 0;
+
+            for (let i = 0; i < cadena.length; i++) {
+                if (cadena[i] === cadena[i].toUpperCase() && cadena[i] !== cadena[i].toLowerCase()) {
+                    mayusculas++;
+                } else if (cadena[i] === cadena[i].toLowerCase() && cadena[i] !== cadena[i].toUpperCase()) {
+                    minusculas++;
+                }
+            }
+
+            if (mayusculas > 0 && minusculas === 0) {
+                alert("La cadena está formada solo por mayúsculas.");
+            } else if (minusculas > 0 && mayusculas === 0) {
+                alert("La cadena está formada solo por minúsculas.");
+            } else if (mayusculas > 0 && minusculas > 0) {
+                alert(`La cadena está formada por una mezcla de mayúsculas y minúsculas. Mayúsculas: ${mayusculas}, Minúsculas: ${minusculas}`);
+            } else {
+                alert("La cadena no contiene letras.");
+            }
+        }        
+    </script>
+</body>
+</html>

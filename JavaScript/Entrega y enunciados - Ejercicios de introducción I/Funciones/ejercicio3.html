@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero = prompt("Introduce un numero");
+        if (isNaN(numero)) {
+            alert("No puedes introducir letras");
+        }
+        else if(numero < 0)
+        {
+            alert("No puedes introducir numeros negativos");
+        }
+        else
+        {
+            numero = parseInt(numero);
+            alert("El numero final es: " + funcion(numero) )
+        }
+
+        function funcion(numero)
+        {
+            return ((numero * 100) - 5) / 2
+        }
+    </script>
+</body>
+</html>

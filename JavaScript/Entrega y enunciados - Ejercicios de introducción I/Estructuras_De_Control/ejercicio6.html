@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var acumulador = 0;
+        var contador = prompt("Cuantos numeros quieres introducir?")
+        if (isNaN(contador))
+        {
+        alert("El valor no es numérico");
+        }
+        else
+        {
+            if(contador < 0)
+            {
+                alert("El numero no puede ser negativo")
+            }
+            else
+            {
+                for(var i = 1; i <= contador; i++)
+                {
+                    var num = prompt("Introduce el numero " + i)
+                    if (isNaN(num))
+                    {
+                        alert("El valor no es numérico");
+                    }
+                    else
+                    {
+                        if(num < 0)
+                        {
+                            alert("El numero no puede ser negativo")
+                            break;
+                        }
+                        else
+                        {
+                            alert(acumulador + " + " + num + " = " + (acumulador + parseInt(num)))
+                            acumulador = acumulador + parseInt(num)
+                        }
+                    }
+                }
+                alert("Se han sumado un total de " + contador + " numeros, y el resultado es: " + acumulador)
+            }
+        }
+    </script>
+</body>
+</html>

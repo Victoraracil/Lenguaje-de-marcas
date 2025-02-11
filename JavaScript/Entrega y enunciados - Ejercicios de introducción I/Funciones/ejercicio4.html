@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var texto = prompt("Introduce un texto");
+        texto.split(" ");
+        alert("El texto introducido tiene " + contarLetras(texto) + " letras");
+
+        var palabra1 = prompt("Introduce una palabra");
+        var palabra2 = prompt("Introduce una palabra");
+        var palabra3 = prompt("Introduce una palabra");
+        alert("Las siguientes palabras unidas son: " + contarPalabras(palabra1, palabra2, palabra3));
+        
+        var texto2 = prompt("Introduce un texto");
+        var posicion = prompt("Introduce un numero");
+        alert("El caracter en la posicion " + posicion + " del texto " + texto2 +" es: " + caracterEnPosicion(texto2, posicion));
+
+        function contarPalabras(palabra1, palabra2, palabra3)
+        {
+            return palabra1 + palabra2 + palabra3;
+        }
+        function contarLetras(texto)
+        {
+            return texto.length;
+        }
+        function caracterEnPosicion(texto, posicion)
+        {
+            return texto2[posicion];
+        }
+    </script>
+</body>
+</html>

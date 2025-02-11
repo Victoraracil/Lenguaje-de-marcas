@@ -1,0 +1,60 @@
+body 
+{
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;    
+}
+
+#contenedor {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titulo
+{
+    text-align: center;
+}
+
+#mensaje 
+{
+    height: 30px;
+    text-align: center;
+}
+
+#casillas, #formulario
+{
+    width: 330px;
+    margin-bottom: 30px;
+}
+
+#casillas div, #formulario div 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.casilla {
+    width: 62px;
+    height: 62px;
+    border: 2px solid#3a3a3c;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    font-size: 2em;
+}
+
+input.casilla
+{
+    text-align: center;
+}
+
+#enviar
+{
+    width: 200px;
+    background-color: black;
+    color: white;
+}

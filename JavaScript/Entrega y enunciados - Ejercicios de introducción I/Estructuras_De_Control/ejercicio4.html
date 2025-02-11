@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var acumulador = 1;
+        var numero = prompt("Intoduce el numero del cual quieras calcular su factorial")
+        if (isNaN(numero))
+        {
+        alert("El valor no es numérico");
+        }
+        else
+        {
+            for(var i = 1; i < numero; i++)
+            {
+                acumulador = acumulador * (i+1)
+            }
+            alert("El resultado del factorial de " + numero + " es: " + acumulador )
+        }
+    </script>
+</body>
+</html>

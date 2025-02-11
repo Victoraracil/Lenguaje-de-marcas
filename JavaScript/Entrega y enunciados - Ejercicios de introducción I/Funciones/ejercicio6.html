@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero1 = prompt("Introduce un numero");
+        var numero2 = prompt("Introduce otro numero");
+        parseInt(numero1);
+        parseInt(numero2);
+        alert(comparacion(numero1, numero2));
+        
+        function comparacion(numero1, numero2)
+        {
+            if(numero1 > numero2)
+            {
+                return "Los numeros estan en orden descendente";
+            }
+            else if(numero1 < numero2)
+            {
+                return "Los numeros estan en orden ascendente";
+            }
+        }
+    </script>
+
+</body>
+</html>
