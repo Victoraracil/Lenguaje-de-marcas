@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Añadir Nuevo Consejo</title>
+   
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Comparte tu conocimiento</h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categorias.html">Categorías</a></li>
+                    <li><a href="consejos.html">Consejos</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+<header>
+</header>
+
+<main>
+    <form action="" method="post">
+        <h2>Nuevo consejo</h2>
+
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+
+        <label for="valoracion">Valoracion (De 0 a 10 ¿como de util crees que es?):</label>
+        <input type="number" id="valoracion" name="valoracion" min="0" max="10" required>
+
+
+        <label for="tiempoCoccion">Efectividad (De 0 a 10 ¿como de efectivo crees que es?):</label>
+        <input type="number" id="tiempoCoccion" name="tiempoCoccion">
+
+        <label for="dificultad">Tipo (¿con que se relaciona tu consejo?):</label>
+        <select id="dificultad" name="dificultad">
+            <option value="alta">Malware</option>
+            <option value="media">Phishing</option>
+            <option value="baja">Hacking Ético</option>
+            <option value="baja">Otro</option>
+        </select>
+
+        <label for="resumen">Breve resumen:</label>
+        <input type="text" id="resumen" name="resumen" required>
+
+        <label for="descripcion">Descripción (Cuentanos a detalle en que consiste):</label>
+        <textarea id="descripcion" name="descripcion" rows="5" required></textarea>
+
+        <div class="form-buttons">
+            <button type="reset">Borrar</button>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2024 Blog Educativo de Ciberseguridad. Todos los derechos reservados.</p>
+        <p>Contacto: victoraracil55@gmail.com -- 666828002</p>
+        <p></p>
+    </div>
+</footer>
+
+</body>
+</html>

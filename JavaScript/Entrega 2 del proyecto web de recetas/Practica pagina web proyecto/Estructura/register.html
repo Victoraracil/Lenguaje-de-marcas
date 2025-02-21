@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Form 3</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <form name="form3" id="form3" action="pagina.php" method="post">
+        <label>
+            Nombre de Usuario: 
+            <input type="text" name="login" id="login" required>
+        </label>
+        <label>
+            E-mail:
+            <input type="email" name="email" id="email" required>
+        </label>
+        <label>
+            Contraseña:
+            <input type="password" name="password" pattern="[A-Za-z0-9]{8}[A-Za-z0-9]*" id="password" required>
+        </label>
+        <label>
+            Repetir contraseña :
+            <input type="password" name="password2" id="password2" required>
+        </label>
+        <input type="submit" value="Registrar" id="enviar">
+
+    </form>
+
+    <script src="register.js"></script>
+</body>
+</html>
