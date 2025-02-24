@@ -18,12 +18,17 @@ body {
     margin: 0 auto;
 }
 
+
 /* Encabezado */
 .header {
     background: linear-gradient(135deg, #00416a, #e4e5e6);
     color: white;
     padding: 1.5rem 0;
     text-align: center;
+}
+
+.register{
+    text-align: right;
 }
 
 .header h1 {
@@ -48,6 +53,7 @@ body {
 .navigation ul li a:hover {
     color: #feca57;
 }
+
 
 /* Barra de búsqueda */
 .search-bar {
@@ -85,6 +91,7 @@ body {
     background: #feca57;
 }
 
+
 /* Introducción */
 .intro {
     background: #e4e5e6;
@@ -100,6 +107,7 @@ body {
 .intro p {
     font-size: 1.2rem;
 }
+
 
 /* Categorías */
 .categories {
@@ -137,8 +145,9 @@ body {
     margin-bottom: 0.5rem;
 }
 
-img{
-    object-fit:scale-down;
+.category-image{
+    width: 100%;
+    height: 300px
 }
 
 
@@ -176,6 +185,7 @@ img{
     font-weight: bold;
 }
 
+
 /* Foro */
 .forum {
     padding: 2rem 0;
@@ -205,6 +215,7 @@ img{
     background: #feca57;
 }
 
+
 /* Pie de página */
 .footer {
     background: #00416a;
@@ -218,8 +229,8 @@ img{
     font-size: 0.9rem;
 }
 
-/* Estilos del formulario */
 
+/* Estilos del formulario */
 form {
     background-color: white;
     max-width: 800px;
@@ -275,13 +286,14 @@ button[type="reset"] {
     background: #f44336;
 }
 
-button[type="submit"] {
+button[type="button"] {
     background: #4CAF50;
 }
 
 button:hover {
     background: #feca57;
 }
+
 
 /* Validación de campos */
 input:invalid, textarea:invalid, select:invalid {

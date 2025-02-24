@@ -2,15 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Registro</title>
+    <title>Inicio de sesion</title>
     <link rel="icon" type="image/x-icon" href="icono.png">
     <link rel="stylesheet" href="CSS/styles.css">
-    <script src="JS/register.js"></script>
+    <script src="JS/login.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <h1>Registrate!!</h1>
+            <h1>Inicia Sesion!!</h1>
             <nav class="navigation">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -20,10 +20,6 @@
     </header>
     <form name="form3" id="form3" action="pagina.php" method="post">
         <label>
-            Nombre de Usuario: 
-            <input type="text" name="login" id="login" required>
-        </label>
-        <label>
             E-mail:
             <input type="email" name="email" id="email" required>
         </label>
@@ -31,12 +27,8 @@
             Contraseña:
             <input type="password" name="password" pattern="[A-Za-z0-9]{8}[A-Za-z0-9]*" id="password" required>
         </label>
-        <label>
-            Repetir contraseña :
-            <input type="password" name="password2" id="password2" required>
-        </label>
-        <input type="submit" value="Registrar" id="enviar">
-        <h5 id="login"><a href="login.html">¿Ya tienes cuenta?</a></h5>
+        <input type="submit" value="Iniciar Sesion" id="enviar">
+        <h5 id="login"><a href="register.html">¿No tienes cuenta?</a></h5>
     </form>
     
 </body>

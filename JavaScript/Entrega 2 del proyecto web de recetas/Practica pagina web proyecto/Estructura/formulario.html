@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/styles.css">
     <title>Añadir Nuevo Consejo</title>
-   
+    <link rel="icon" type="image/x-icon" href="icono.png">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
+            <div class="register"><a href="register.html">Registrate/Inicia Sesion</a></div>
             <h1>Comparte tu conocimiento</h1>
             <nav class="navigation">
                 <ul>
@@ -35,12 +36,11 @@
         <label for="valoracion">Valoracion (De 0 a 10 ¿como de util crees que es?):</label>
         <input type="number" id="valoracion" name="valoracion" min="0" max="10" required>
 
+        <label for="Efectividad">Efectividad (De 0 a 10 ¿como de efectivo crees que es?):</label>
+        <input type="number" id="Efectividad" name="Efectividad">
 
-        <label for="tiempoCoccion">Efectividad (De 0 a 10 ¿como de efectivo crees que es?):</label>
-        <input type="number" id="tiempoCoccion" name="tiempoCoccion">
-
-        <label for="dificultad">Tipo (¿con que se relaciona tu consejo?):</label>
-        <select id="dificultad" name="dificultad">
+        <label for="Tipo">Tipo (¿con que se relaciona tu consejo?):</label>
+        <select id="Tipo" name="Tipo">
             <option value="alta">Malware</option>
             <option value="media">Phishing</option>
             <option value="baja">Hacking Ético</option>
@@ -55,7 +55,7 @@
 
         <div class="form-buttons">
             <button type="reset">Borrar</button>
-            <button type="submit">Enviar</button>
+            <button type="button">Añadir</button>
         </div>
     </form>
 </main>
