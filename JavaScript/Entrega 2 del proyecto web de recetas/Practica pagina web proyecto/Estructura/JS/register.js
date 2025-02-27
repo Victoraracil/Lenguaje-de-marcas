@@ -1,46 +1,55 @@
 window.addEventListener("load", function()
 {
-    //usuario
-    document.form.user.addEventListener("invalid", function()
-    {
-        if(this.validity.valueMissing){
-            this.setCustomValidity("El nombre no puede estar vacio");
-        }
-    });
-    document.from.user.addEventListener("input", function()
-    {
-        this.setCustomValidity("");
-    });
-
-    //email
-    document.form.email.addEventListener("invalid", function()
-    {
-        if(this.validity.valueMissing){
-            this.setCustomValidity("El e-mail no puede estar vacio");
-        }
-        else if (this.validity.typeMismatch){
-            this.setCustomValidity("Asegurate de escribir un e-mail valido");
-        }
-    });
-    document.from.email.addEventListener("input", function()
-    {
-        this.setCustomValidity("");
-    });
-
-    //contraseña
+    let user = document.getElementById("user");
+    let email = document.getElementById("email")
     let pass = document.getElementById("password");
     let pass2 = document.getElementById("password2");
 
+    //usuario
+    user.addEventListener("invalid", function()
+    {
+        if(user.validity.valueMissing){
+            user.setCustomValidity("El nombre no puede estar vacio");
+        }
+        else if (user.validity.typeMismatch){
+            user.setCustomValidity("Asegurate de escribir un e-mail valido");
+        }
+    });
+    user.addEventListener("input", function()
+    {
+        user.setCustomValidity("");
+    });
+
+    //email
+    email.addEventListener("invalid", function()
+    {
+        if(email.validity.valueMissing){
+            email.setCustomValidity("El e-mail no puede estar vacio");
+        }
+        else if (email.validity.typeMismatch){
+            email.setCustomValidity("Asegurate de escribir un e-mail valido");
+        }
+    });
+    email.addEventListener("input", function()
+    {
+        email.setCustomValidity("");
+    });
+
+    //contraseña
     pass.addEventListener("invalid", function()
     {
         if(pass.validity.valueMissing)
         {
             pass.setCustomValidity("El password no puede estar vacío");
         }
-        else if (pass.validity.patternMismatch)
+        else if (pass.validity.typeMismatch)//falta que salga esta alerta (sale una alerta pora la alerta default, no esta)
         {
             pass.setCustomValidity("El password debe tener al menos 8 caracteres, y sólo pueden ser letras y números");
         }
+    });
+    pass.addEventListener("input", function()
+    {
+        pass.setCustomValidity("");
     });
     pass.addEventListener("input", function()
     {

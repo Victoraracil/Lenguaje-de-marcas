@@ -232,6 +232,7 @@ body {
 }
 
 
+
 /* Estilos del formulario */
 form {
     background-color: white;
@@ -254,6 +255,8 @@ label {
     margin: 10px 0 5px;
     font-size: 1.1rem;
 }
+
+
 
 input[type="text"],
 input[type="number"],
@@ -294,8 +297,10 @@ select {
     font-size: 1rem;
     transition: background 0.3s;
     margin: 0.5rem;
-    width: 13%;
+    width: 20%;
 }
+
+
 
 button[type="reset"] {
     background: #f44336;
@@ -313,6 +318,7 @@ button:hover {
 /* Validación de campos */
 input:invalid, textarea:invalid, select:invalid {
     border-color: #f44336;
+    background-color: red
 }
 
 input:valid, textarea:valid, select:valid {

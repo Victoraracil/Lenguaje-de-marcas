@@ -1,21 +1,22 @@
 window.addEventListener("load", function()
 {
-    document.form.email.addEventListener("invalid", function()
+    let pass = document.getElementById("password");
+    let email = document.getElementById("email");
+    email.addEventListener("invalid", function()
     {
-        if(this.validity.valueMissing){
-            this.setCustomValidity("El e-mail no puede estar vacio");
+        if(email.validity.valueMissing){
+            email.setCustomValidity("El e-mail no puede estar vacio");
         }
-        else if (this.validity.typeMismatch){
-            this.setCustomValidity("Asegurate de escribir un e-mail valido");
+        else if (email.validity.typeMismatch){
+            email.setCustomValidity("Asegurate de escribir un e-mail valido");
         }
     });
-    document.from.email.addEventListener("input", function()
+    email.addEventListener("input", function()
     {
-        this.setCustomValidity("");
+        email.setCustomValidity("");
     });
 
     //contraseña
-    let pass = document.getElementById("password");
 
     pass.addEventListener("invalid", function()
     {
@@ -27,6 +28,10 @@ window.addEventListener("load", function()
         {
             pass.setCustomValidity("El password debe tener al menos 8 caracteres, y sólo pueden ser letras y números");
         }
+    });
+    pass.addEventListener("input", function()
+    {
+        pass.setCustomValidity("");
     });
     
     //falta implementar la comprobacion de si el correo y contraseña coinciden con las de algun usuario guardado

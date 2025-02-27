@@ -19,19 +19,19 @@ window.addEventListener("load", function() {
     ];
     
     // Seleccionar el contenedor
-    const lista = document.querySelector(".tutorial");
+    const lista = document.querySelector(".consejos");
 
     // Generar contenido dinámico
     let contenido = "";
     consejosshort.forEach(consejo => {
         contenido += `
-            <div class="consejo">
+            <article class="tutorial">
                 
                 ${consejo.titulo}  
                 ${consejo.resumen}
                 ${consejo.enlace}
                 
-            </div>
+            </article>
         `;
     });
 

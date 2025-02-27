@@ -6,6 +6,7 @@
     <title>Añadir Nuevo Consejo</title>
     <link rel="icon" type="image/x-icon" href="icono.png">
     <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/formulario.js"></script>
 </head>
 <body>
     <header class="header">
@@ -23,9 +24,6 @@
         
     </header>
 
-<header>
-</header>
-
 <main>
     <form action="" method="post">
         <h2>Nuevo consejo</h2>
@@ -37,7 +35,7 @@
         <input type="number" id="valoracion" name="valoracion" min="0" max="10" required>
 
         <label for="Efectividad">Efectividad (De 0 a 10 ¿como de efectivo crees que es?):</label>
-        <input type="number" id="Efectividad" name="Efectividad">
+        <input type="number" id="Efectividad" name="Efectividad" min="0" max="10" required>
 
         <label for="Tipo">Tipo (¿con que se relaciona tu consejo?):</label>
         <select id="Tipo" name="Tipo">
@@ -55,7 +53,7 @@
 
         <div class="form-buttons">
             <button type="reset">Borrar</button>
-            <button type="button">Añadir</button>
+            <button type="submit">Añadir</button>
         </div>
     </form>
 </main>
