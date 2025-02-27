@@ -1,4 +1,6 @@
-window.addEventListener("load", function() {
+window.addEventListener("load", function() 
+{
+    //array para los consejos cortos que se muestran en la pagina principal
     let consejos = [
         {
             titulo: "<h3>Cómo evitar vulnerabilidades</h3>",
