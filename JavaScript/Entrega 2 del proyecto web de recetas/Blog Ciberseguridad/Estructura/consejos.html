@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consejos de la Comunidad</title>
+    <link rel="icon" type="image/x-icon" href="icono.png">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/consejos.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="register"><a href="register.html">Registrate/Inicia Sesion</a></div>
+            <h1>Consejos de la Comunidad</h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categorias.html">Categorías</a></li>
+                    <li><a href="formulario.html">Añadir</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-bar">
+            <form action="#" method="GET">
+                <input type="text" id="search" name="search" placeholder="Buscar consejos...">
+                <button type="button">Buscar</button>             
+            </form>
+        </div>
+        <div>
+            <!--Filtros-->
+            <select name="categoria" id="categoria">
+                <option value="filtro">Filtrar por categoria</option>
+                <option value="Malware">Malware</option>
+                <option value="Phishing">Phishing</option>
+                <option value="Hacking etico">Hacking etico</option>
+                <option value="Otros">Otros</option>
+            </select>
+            <select name="valoracion" id="valoracion">
+                <option value="filtro">Filtrar por Valoracion</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <select name="efectividad" id="efectividad">
+                <option value="filtro">Filtrar por Efectividad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select> 
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="intro">
+            <div class="container">
+                <h2>Comparte y Aprende</h2>
+                <p>Encuentra consejos útiles y añade los tuyos para ayudar a otros usuarios.</p>
+            </div>
+        </section>
+            <!--Consejos en archivo JS-->
+        <section id="popular-consejos" class="popular-tips">
+            <div class="container">
+                <div class="tip-list">
+                    
+                </div>
+            </div>
+        </section>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Blog Educativo de Ciberseguridad. Todos los derechos reservados.</p>
+            <p>Contacto: victoraracil55@gmail.com -- 666828002</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -42,7 +42,7 @@ window.addEventListener("load", function()
         {
             pass.setCustomValidity("El password no puede estar vacío");
         }
-        else if (pass.validity.typeMismatch)//falta que salga esta alerta (sale una alerta pora la alerta default, no esta)
+        else if (pass.validity.typeMismatch)//falta que salga esta alerta (sale una alerta pero la alerta default)
         {
             pass.setCustomValidity("El password debe tener al menos 8 caracteres, y sólo pueden ser letras y números");
         }
@@ -76,6 +76,5 @@ window.addEventListener("load", function()
         }
     });
 
-    //falta implementar que cada nuevo registro sea un objeto usuario y que este usuario se guarde
 });
 

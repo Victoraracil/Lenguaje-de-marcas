@@ -17,7 +17,6 @@ window.addEventListener("load", function()
     });
 
     //contraseña
-
     pass.addEventListener("invalid", function()
     {
         if(pass.validity.valueMissing)
@@ -33,6 +32,4 @@ window.addEventListener("load", function()
     {
         pass.setCustomValidity("");
     });
-    
-    //falta implementar la comprobacion de si el correo y contraseña coinciden con las de algun usuario guardado
 });

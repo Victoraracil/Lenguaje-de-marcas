@@ -1,8 +1,10 @@
 window.addEventListener("load", function()
 {
+    //variables
     let tit = document.getElementById("titulo");
     let resu = document.getElementById("resumen");
     let desc = document.getElementById("descripcion")
+
     //titulo
     tit.addEventListener("invalid", function()
     {
@@ -48,6 +50,3 @@ window.addEventListener("load", function()
         desc.setCustomValidity("");
     });
 });
-
-
-//faltaria hacer la parte para que al pulsar el boton "enviar" se cree un objeto 'consejo' y se guarde en un array para posteriormente mostrarlo en consejos
