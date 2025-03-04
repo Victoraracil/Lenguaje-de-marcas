@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*Realiza una página web utilizando JavaScript, que permita al usuario acertar un
+    número situado entre un valor máximo y uno mínimo (estarán asignados en el
+    código). Si el número introducido esta fuera del rango de los valores máximo y
+    mínimo, se le volverá a solicitar un número, sin que esto cuente como intento.
+    Se dará un máximo de 3 intentos.
+    El mensaje final a mostrar deberá de ser uno de estos:
+    “Enhorabuena, has acertado el numero en el intento X”
+    “Lo siento, has fallado utilizado ya tus 3 intentos”*/
+        const numero = 5;
+        const maxIntentos = 3;
+        let intentos = 0;
+
+        while(intentos < maxIntentos) {
+            let num = prompt("Introduce un numero entre el 1 y el 10 (estos incluidos)");
+            if (isNaN(num)) {
+                alert("Introduce un numero valido");
+
+            } else if(num < 1 || num > 10) {
+                alert("Introduce un numero entre el 1 y el 10 (no se restan intentos)");
+
+            } else {
+                intentos++;
+                if(num == numero) {
+                    alert("Enhorabuena, has acertado el numero en el intento " + (intentos));
+                    break;
+
+                } else if (intentos < maxIntentos) {
+                    alert("Lo siento, has fallado. Intenta de nuevo, te quedan: " + (maxIntentos - intentos) + " intentos");
+                }
+            }
+        }
+
+        if (intentos === maxIntentos && num != numero) {
+            alert("Lo siento, has fallado utilizado ya tus 3 intentos");
+        }
+    </script>
+</body>
+</html>

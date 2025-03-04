@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio3</title>
+	<script type="text/javascript">
+		/*
+		Crea un script en la página web que se proporciona que haga lo siguiente:
+		• Pide al usuario que introduzca un número.
+		• Calcule si el número es o no capicúa. (0,75p)
+		• Escribe la salida en el formato que se indica en el ejemplo dentro del <div
+		id=”salida></div> que está en la página web (0,5p)
+		• Desde el DOM aplica los siguientes estilos al <div> (0,5p)
+		o Color de texto blanco
+		o Fondo azul
+		o Borde 5px color negro
+		o Ancho 25%
+		*/
+		var numero = prompt("Introduce un numero");
+		if (isNaN(numero)) {
+			alert("Introduce un numero valido");
+		} else {
+			let esCapicua = true;
+			for (let i = 0; i < numero.length / 2; i++) {
+				if (numero[i] !== numero[numero.length - 1 - i]) {
+					esCapicua = false;
+					break;
+				}
+			}
+			let salida = document.getElementById("salida");
+			if (esCapicua) {
+				salida.innerHTML = "El número " + (numero) + " es capicúa.";
+			} else {
+				salida.innerHTML = "El número " + (numero) + " no es capicúa.";
+			}
+			salida.style.color = "white";
+			salida.style.backgroundColor = "blue";
+			salida.style.border = "5px solid black";
+			salida.style.width = "25%";
+			
+		}
+	</script>
+</head>
+<body>
+	<h1>Comprobación de si un número es o no capícua</h1>
+    <div id="salida"></div>
+</body>
+</html>

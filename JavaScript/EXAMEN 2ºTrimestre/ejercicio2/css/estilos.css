@@ -1,0 +1,25 @@
+body
+{
+    font-family: Arial;
+    margin: 20px 10%;
+}
+
+#principal
+{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 50px;
+}
+
+label
+{
+    display: block;
+    margin:20px 0;
+}
+
+#enviar
+{
+    background-color: black;
+    color: white;
+    width: 300px;
+}

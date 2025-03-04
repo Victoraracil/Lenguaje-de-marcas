@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <h1>La opinión de nuestros usuarios</h1>
+
+    <section id="principal">
+       
+        <section id="formulario">
+            <h2>Formulario de valoración</h2>
+            <form name="form_valoracion" action="/">
+                <label>
+                    Nombre: 
+                    <input type="text" name="nombre" required>
+                </label>
+                <label>
+                    E-mail:
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    Edad:
+                    <input type="number" name="edad" required min="18" max="100">
+                </label>
+                <label>
+                    Teléfono:
+                    <input type="text" name="telefono">
+                </label>
+                <label>
+                    Web: 
+                    <input type="text" name="web">
+                </label>
+                <label>Valora nuestra web:</label>
+                <label>
+                    <input type="radio" name="valoracion" value="5">Excelente
+                </label>
+                <label>
+                    <input type="radio" name="valoracion" value="4">Muy buena
+                </label>
+                <label>
+                    <input type="radio" name="valoracion" value="3">Buena
+                </label>
+                <label>
+                    <input type="radio" name="valoracion" value="2">Regular
+                </label>
+                <label>
+                    <input type="radio" name="valoracion" value="1">Mala
+                </label>
+                <input type="submit" value="Enviar" id="enviar">
+            </form>
+        </section>
+
+        <section id="opiniones">
+            <h2>Listado de valoraciones</h2>
+        </section>
+
+    </section>
+    <script src="js/formulario.js"></script>
+</body>
+</html>
