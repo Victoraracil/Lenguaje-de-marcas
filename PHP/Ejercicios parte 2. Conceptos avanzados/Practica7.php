@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 2.6</title>
+    <title>Ejercicio 2.7</title>
 </head>
 <body>
-    <h1>Ejercicio 2.6</h1>
+    <h1>Ejercicio 2.7</h1>
     <?php
         /*Haz un programa para codificar por desplazamiento una frase utilizando el array
         de letras del ejercicio anterior. La idea es que convierta cada letra por la siguiente
@@ -15,7 +15,6 @@
         contiene espacios debe dejarlos igual.
         Sugerencia: puede resultar útil la operación módulo para tratar los índices del
         array
-        
         
         Modifica el programa anterior para que el desplazamiento sea variable. Es decir,
         en un desplazamiento 3 se transforma la letra por la que está 3 posiciones más

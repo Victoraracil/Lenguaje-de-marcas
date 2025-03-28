@@ -1,0 +1,21 @@
+1er TRIMESTRE:
+
+Sistemas infotmaticos:6
+IPE:6
+Bases de datos: 2
+Programacion: 2
+Entornos de desarrollo:3
+Ingles: 9
+Lenguaje de marcas: 3
+Proyecto intermodular: 5
+
+2do TRIMESTRE:
+
+Sistemas infotmaticos: 4
+IPE: 5
+Bases de datos: 4
+Programacion: 7
+Entornos de desarrollo: 3
+Ingles: 8
+Lenguaje de marcas: 5
+Proyecto intermodular: 7

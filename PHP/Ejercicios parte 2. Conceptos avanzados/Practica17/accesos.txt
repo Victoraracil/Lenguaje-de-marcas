@@ -1,0 +1,2 @@
+El usuario Juan ha accedido al sistema.
+Intento fallido de acceso del usuario Juan.
