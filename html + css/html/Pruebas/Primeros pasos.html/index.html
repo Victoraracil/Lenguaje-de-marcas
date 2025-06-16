@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body> 
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Holapeter</td>
+                <th>Gratis</th>
+            </tr>
+            <tr>
+                <td>Hola   </td>
+                <th>20$</th>
+            </tr>
+            <tr>
+                <td>chancho feliz muy feliz</td>
+                <th>200$</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <th>Total: 220$</th>
+        </tfoot>
+    </table>
+    <!--ul es lista no ordenada-->   
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!--ol es lista ordenada-->  
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">subelemento1</li>
+                <li style="list-style-type: lower-roman;">subelemento2</li>
+                <li style="list-style-type: lower-roman;">subelemento3</li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+
+    <form action="/formulario" method="post">
+        <label for="nombre">Nombre</label>
+        <input value="cahncho" type="text" id="nombre" name="nombre" placeholder="Nombre" />
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Apellido" />
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">valor por defecto</textarea>
+        <br>
+        <button type="button">tipo boton</button>
+        <button type="reset">tipo reset</button>
+        <button type="submit">tipo submit</button>
+
+    </form>
+    <h1>Mi primer texto</h1>
+    <h2>Mi segundo texto</h2>
+    <h3>Tercer texto</h3>
+    <h4>Cuarto texto</h4>
+    <h5>Quinto texto</h5>
+    <h6>sexto texto</h6>
+    <p>chancho feliz con patatas fritas.</p>
+    <p>elpepe</p>
+    <hr>
+    <h2>etesech</h2>
+    <p> un texto muy 
+        <span style="color:rgb(238, 126, 126)">
+        muy largo</span> para hacer pruebas<br><!--salto de linea-->
+        de etiquetas y mas cosas jijiji
+    </p>
+    <!--Etiqueta para comentarios,
+    no se ve en la pagina-->
+    <a target="_blank" href ="https://www.google.com">Ir a google</a>
+    <img src="Imagenes/Horario.PNG" height="400"/>
+   
+</body>
+</html>

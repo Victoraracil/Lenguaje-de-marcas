@@ -1,0 +1,289 @@
+/* Reset de márgenes y estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Encabezado */
+.header {
+    background: linear-gradient(135deg, #00416a, #e4e5e6);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navigation ul li a:hover {
+    color: #feca57;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar form {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 0.5rem 1rem;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    background: #00416a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #feca57;
+}
+
+/* Introducción */
+.intro {
+    background: #e4e5e6;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+/* Categorías */
+.categories {
+    padding: 2rem 0;
+    background: white;
+}
+
+.categories h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #00416a;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.category {
+    background: #f7f7f7;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1 1 calc(30% - 1rem);
+    max-width: calc(30% - 1rem);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Tutoriales */
+.tutorials {
+    padding: 2rem 0;
+    background: #f9f9f9;
+}
+
+.tutorials h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #00416a;
+}
+
+.tutorial {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.tutorial a {
+    text-decoration: none;
+    color: #00416a;
+    font-weight: bold;
+}
+
+/* Foro */
+.forum {
+    padding: 2rem 0;
+    background: white;
+    text-align: center;
+}
+
+.forum h2 {
+    font-size: 2rem;
+    color: #00416a;
+    margin-bottom: 1rem;
+}
+
+.forum a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #00416a;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.forum a:hover {
+    background: #feca57;
+}
+
+/* Pie de página */
+.footer {
+    background: #00416a;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+/* Estilos del formulario */
+
+form {
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #00416a;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 0.75rem 2rem;
+    background: #00416a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    margin: 0.5rem;
+}
+
+button[type="reset"] {
+    background: #f44336;
+}
+
+button[type="submit"] {
+    background: #4CAF50;
+}
+
+button:hover {
+    background: #feca57;
+}
+
+/* Validación de campos */
+input:invalid, textarea:invalid, select:invalid {
+    border-color: #f44336;
+}
+
+input:valid, textarea:valid, select:valid {
+    border-color: #4CAF50;
+}

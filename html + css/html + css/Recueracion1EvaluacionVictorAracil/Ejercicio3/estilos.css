@@ -1,0 +1,234 @@
+body
+{
+    font-family: Arial;
+    height: auto;
+}
+
+.apartado
+{
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color:moccasin;
+    
+}
+
+#introduccion
+{
+    grid-column: 1;
+    grid-row: 1;
+    background-color:rgb(230, 138, 11);
+    
+}
+
+#introduccion2
+{
+    grid-column: 1;
+    grid-row: 1;
+    background-color:rgb(230, 138, 11);
+}
+
+#adaptativo
+{
+    grid-column: 1; 
+    grid-row: 1;
+    background-color:rgb(175, 230, 11);
+}
+
+#responsive
+{
+    grid-column: 1;
+    grid-row: 1;
+    background-color:rgb(11, 66, 230);
+}
+#responsive2
+{
+    grid-column: 1;
+    grid-row: 1;
+    background-color:rgb(11, 66, 230);
+}
+#responsive3
+{
+    grid-column: 1;
+    grid-row: 1;
+    background-color:rgb(11, 66, 230);
+}
+
+#conclusion
+{
+    grid-column: 1;
+    grid-row: 1;
+    background-color:rgba(138, 131, 118, 0.158);
+}
+#conclusion2
+{
+    grid-column: 1;
+    grid-row: 1;
+    background-color:rgba(138, 131, 118, 0.158);
+}
+#conclusion3
+{
+    grid-column: 1;
+    grid-row: 1;
+    background-color:rgba(138, 131, 118, 0.158);
+}
+#conclusion4
+{
+    grid-column: 1;
+    grid-row: 1;
+    background-color:rgba(138, 131, 118, 0.158);
+}
+
+@media(min-width: 768px)
+{
+    #contenedor
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+    }
+
+    #introduccion
+    {
+        grid-column: 1;
+        grid-row: 1;
+        background-color:rgb(230, 138, 11);
+    }
+
+    #introduccion2
+    {
+        grid-column: 1;
+        grid-row: 2;
+        background-color:rgb(230, 138, 11);
+    }
+
+    #adaptativo
+    {
+        grid-column: 1; 
+        grid-row: 3;
+        background-color:rgb(175, 230, 11);
+    }
+
+    #responsive
+    {
+        grid-column: 1;
+        grid-row: 4;
+        background-color:rgb(11, 66, 230);
+    }
+    #responsive2
+    {
+        grid-column: 1;
+        grid-row: 5;
+        background-color:rgb(11, 66, 230);
+    }
+    #responsive3
+    {
+        grid-column: 1;
+        grid-row: 6;
+        background-color:rgb(11, 66, 230);
+    }
+
+    #conclusion
+    {
+        grid-column: 1;
+        grid-row: 7;
+        background-color:rgba(138, 131, 118, 0.158);
+    }
+    #conclusion2
+    {
+        grid-column: 2;
+        grid-row: 7;
+        background-color:rgba(138, 131, 118, 0.158);
+    }
+    #conclusion3
+    {
+        grid-column: 1;
+        grid-row: 8;
+        background-color:rgba(138, 131, 118, 0.158);
+    }
+    #conclusion4
+    {
+        grid-column: 2;
+        grid-row: 8;
+        background-color:rgba(138, 131, 118, 0.158);
+    }
+
+}
+
+@media(min-width: 992px)
+{
+    
+    #contenedor
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 10px;
+    }
+
+    #introduccion
+    {
+        grid-column: 1;
+        grid-row: 1;
+        background-color:rgb(230, 138, 11);
+    }
+
+    #introduccion2
+    {
+        grid-column: 2;
+        grid-row: 1;
+        background-color:rgb(230, 138, 11);
+    }
+
+    #adaptativo
+    {
+        grid-column: 1; 
+        grid-row: 2;
+        background-color:rgb(175, 230, 11);
+    }
+
+    #responsive
+    {
+        grid-column: 1;
+        grid-row: 3;
+        background-color:rgb(11, 66, 230);
+    }
+    #responsive2
+    {
+        grid-column: 2;
+        grid-row: 3;
+        background-color:rgb(11, 66, 230);
+    }
+    #responsive3
+    {
+        grid-column: 3;
+        grid-row: 3;
+        background-color:rgb(11, 66, 230);
+    }
+
+    #conclusion
+    {
+        grid-column: 1;
+        grid-row: 4;
+        background-color:rgba(138, 131, 118, 0.158);
+    }
+    #conclusion2
+    {
+        grid-column: 2;
+        grid-row: 4;
+        background-color:rgba(138, 131, 118, 0.158);
+    }
+    #conclusion3
+    {
+        grid-column: 3;
+        grid-row: 4;
+        background-color:rgba(138, 131, 118, 0.158);
+    }
+    #conclusion4
+    {
+        grid-column: 4;
+        grid-row: 4;
+        background-color:rgba(138, 131, 118, 0.158);
+    }
+}

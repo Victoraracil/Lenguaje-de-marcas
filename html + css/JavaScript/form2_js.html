@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Form 2</title>
+    <style>
+        label
+        {
+            display: block;
+        }        
+    </style>
+    <script>
+        function validarFormulario(evento)
+        {
+            let login = document.form2.login.value;
+            let edad = document.form2.edad.value;
+            let nacimiento = document.form2.nacimiento.value;
+            let seleccionado = document.form2.provincia.selectedIndex;
+            let correcto = true;
+
+            if (login == "")
+            {
+                alert("El login no puede estar vacío");
+                correcto = false;
+            }
+            else if (isNaN(edad) || edad < 0 || edad > 200)
+            {
+                alert("La edad no es correcta");
+                correcto = false;
+            }
+            else if (!/^[0-9]{4}$/.test(nacimiento))
+            {
+                alert("El año de nacimiento no tiene 4 dígitos");
+                correcto = false;
+            }
+            else if (seleccionado == 0)
+            {
+                alert("Debes seleccionar una provincia");
+                correcto = false;
+            }
+
+            if (!correcto)
+            {
+                evento.preventDefault();
+            }
+            else
+            {
+                alert("Todo es correcto");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Formulario 2</h1>
+    <form name="form2" id="form2" action="pagina.php" method="post">
+        <label>
+            Login: 
+            <input type="text" name="login" id="login">
+        </label>
+        <label>
+            Edad:
+            <input type="number" name="edad" id="edad">
+        </label>
+        <label>
+            Año de nacimiento:
+            <input type="number" name="nacimiento" id="nacimiento">
+        </label>
+        <label>
+            Seleccione provincia:
+            <select name="provincia" id="provincia">
+                <option value="">-Seleccionar una provincia-</option>
+                <option value="Alicante">Alicante</option>
+                <option value="Valencia">Valencia</option>
+                <option value="Castellón">Castellón</option>
+            </select>
+        </label>
+        <input type="submit" value="Enviar" id="enviar">
+    </form>
+
+    <script>
+        document.form2.addEventListener("submit", validarFormulario);
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Saludo JavaScript</title>
+    <script>
+        console.error("Hola, Victor")
+    </script>
+</head>
+<body>
+    <script>
+        var numero = prompt("Dime un número");
+        var numero2 = prompt("Dime otro número");
+
+        if (isNaN(numero || numero2))
+        {
+        alert("El valor no es numérico");
+        }
+        var doble = parseInt(numero + numero2);
+        alert("La suma es " + doble);
+        var doble = parseInt(numero - numero2);
+        alert("La resta es " + doble);
+        var doble = parseInt(numero * numero2);
+        alert("La multiplicacion es " + doble);
+        var doble = parseInt(numero / numero2);
+        alert("La division es " + doble);
+
+        var nota = prompt("Dime tu nota del examen");
+        if (nota <= 4){
+            alert("Has suspendido")
+        }
+        else if(nota == 5){
+            alert("Has aprobado")
+        }
+        else if(nota == 6){
+            alert("Has sacado un bien")
+        }
+        else if(nota == 7 || nota == 8){
+            alert("Has sacado un notable")
+        }
+        else{
+            alert("Has sacado un sobresaliente")
+        }
+    </script>
+       
+    <h1>Saludo JavaScript</h1>
+</body>
+</html>

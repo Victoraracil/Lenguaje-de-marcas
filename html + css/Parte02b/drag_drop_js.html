@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Drag & Drop</title>
+    <style>
+        #contenedor
+        {
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        div
+        {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .receptor
+        {
+            border: 1px solid black;
+            border-radius: 10px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div>
+            <img id="logoFirefox" draggable="true" class="imagen" src="img/logo_firefox.jpg">
+        </div>
+        <div>
+            <img id="logoOpera" draggable="true" class="imagen" src="img/logo_opera.jpg">
+        </div>
+        <div>
+            <img id="logoSafari" draggable="true" class="imagen" src="img/logo_safari.jpg">
+        </div>
+        <div id="receptor_logoSafari" class="receptor">
+            <p>Safari</p>
+        </div>
+        <div id="receptor_logoFirefox" class="receptor">
+            <p>Firefox</p>
+        </div>
+        <div id="receptor_logoOpera" class="receptor">
+            <p>Opera</p>
+        </div>
+    </div>
+
+    <div>
+        <button id="check">Comprobar</button>
+    </div>
+
+    <script>
+        let imagenes = document.getElementsByClassName("imagen");
+        for (let img of imagenes)
+        {
+            img.addEventListener("dragstart", function(evento) {
+                evento.dataTransfer.setData("elemento", evento.target.id);
+            });
+        };
+
+        let receptores = document.getElementsByClassName("receptor");
+        for (let rec of receptores)
+        {
+            rec.addEventListener("dragover", function(evento) {
+                evento.preventDefault();
+            });
+            rec.addEventListener("drop", function(evento) {
+                evento.preventDefault();
+                let datos = evento.dataTransfer.getData("elemento");
+                evento.target.appendChild(document.getElementById(datos));
+            });
+        }
+
+        let boton = document.getElementById("check");
+        boton.addEventListener("click", function() {
+            let correcto = true;
+            let imagenes = document.getElementsByClassName("imagen");
+            for (let img of imagenes)
+            {
+                let padre = img.parentNode;
+                if (padre.id != "receptor_" + img.id)
+                {
+                    correcto = false;
+                }
+            };
+
+            if (correcto)
+            {
+                alert("¡CORRECTO!");
+            }
+            else
+            {
+                alert("¡ERROR!");
+            }
+        });
+    </script>
+</body>
+</html>

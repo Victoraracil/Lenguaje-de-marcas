@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div
+        {
+            background-color:cadetblue;
+            padding: 10px;
+        }
+        p
+        {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">
+            <img id="img1" src="img/foto.png">
+        </p>
+    </div>
+    <br><br><br>
+    <div id="div2">
+        <p id="p2">
+            <img id="img2" src="img/foto.png">
+        </p>
+    </div>
+</body>
+</html>
+
+<script>
+let eventoClic = function() {
+    alert("Has pulsado " + this.id);
+}
+
+let div = document.getElementById("div1");
+let p = document.getElementById("p1");
+let img = document.getElementById("img1");
+
+div.addEventListener("click", eventoClic);
+p.addEventListener("click", eventoClic);
+img.addEventListener("click", eventoClic);
+
+let div2 = document.getElementById("div2");
+let p2 = document.getElementById("p2");
+let img2 = document.getElementById("img2");
+
+div2.addEventListener("click", eventoClic, true);
+p2.addEventListener("click", eventoClic, true);
+img2.addEventListener("click", eventoClic, true);
+
+</script>

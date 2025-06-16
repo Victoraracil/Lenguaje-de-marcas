@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=xº, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        var numero = prompt ("Dime tu DNI");
+    
+        // Eliminar el último carácter de la cadena (el dígito de control)
+        var digitoControl = numero.charAt(numero.length - 1).toUpperCase(); // Guardar el último carácter
+        numero = numero.slice(0, -1); // Eliminar el último carácter
+    
+        numero = parseInt(numero) % 23;
+    
+        var letras  = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N',
+        'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+        
+        if (digitoControl != letras[numero]){
+            alert("DNI incorrecto")
+        }
+        else{
+            alert("DNI correcto. Tu letra es " + letras[numero] + " y tu dígito de control era " + digitoControl);
+        }
+    </script>
+    
+</head>
+<body>
+    <p onclick="alert('Hola, buenas');">Bla bla bla bla bla... </p>
+
+</body>
+</html>

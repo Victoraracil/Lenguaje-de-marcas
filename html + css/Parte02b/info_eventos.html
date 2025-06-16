@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+	<head>
+   		<meta charset="utf8">
+   		<title>Información de eventos</title>
+   		<style>
+   			#div1 { border: solid 1px black; width: 30%; height: 100px; margin: 50px; text-align: center; }
+   		</style> 
+   		<script>
+			document.onmousemove = function(event)
+			{
+				let mouseX = event.clientX;
+				let mouseY = event.clientY;
+				let elem = document.getElementById("div1");
+				elem.innerHTML = "<p>X = " + mouseX + ", Y = " + mouseY + "</p>";
+			}
+   	
+   			document.onkeypress = function(event)
+   			{
+   				let codigo = event.keyCode;
+				alert(event.key);
+   				alert ("Has pulsado la tecla con código " + codigo);
+   			}
+   		</script>
+	</head>
+	<body>
+		<div id="div1">
+		</div>
+	</body>
+</html>
