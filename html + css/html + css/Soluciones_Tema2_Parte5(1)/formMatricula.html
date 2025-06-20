@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de matrícula</title>
+</head>
+<body>
+    <h1>Formulario de matrícula</h1>
+    <form action="pagina.php" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" name="nombre" id="nombre">
+        <br><br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" name="fecha" id="fecha">
+        <br><br>
+        <label for="hermanos">Hermanos en el centro:</label>
+        <input type="number" name="hermanos" id="hermanos">
+        <br><br>
+        <label for="telefono">Teléfono móvil de contacto:</label>
+        <input type="text" name="telefono" id="telefono">
+        <br><br>
+        <label for="ciclo">Ciclo seleccionado:</label>
+        <select name="ciclo" id="ciclo">
+            <option value="ASIR">ASIR</option>
+            <option value="DAM">DAM</option>
+            <option value="DAW">DAW</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

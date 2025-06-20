@@ -1,0 +1,17 @@
+body
+{
+    font-family: Arial;
+    background-color: deepskyblue;
+}
+
+a:link, a:visited, a:focus
+{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:active
+{
+    color: orange;
+    text-decoration: underline;
+}

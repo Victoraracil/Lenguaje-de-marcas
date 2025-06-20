@@ -6,40 +6,73 @@
     <link rel="stylesheet" href="styles.css">
     <title>Añadir Nuevo Consejo</title>
    
-<body>
-    <main>
-        <form action="" method="post">
-            <h2>Nuevo consejo</h2>
-
-            <label for="Usuario">Usuario:</label>
-            <input type="text" id="user" name="user" required>
-            <br>
-            <label for="Contraseña">Contraseña</label>
-            <input type="password" id="pass" name="pass" required>
-            <br>
-            <label for="Contraseña2">Repita la contraseña</label>
-            <input type="password" id="pass" name="pass" required>            
-            <br>
-            <label for="Email">Email: </label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="Nombre">Nomre:</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-            <label for="Apellidos">Apellidos:</label>
-            <input type="text" id="apellido" name="apellido" required>
-            <br>
-            <label for="Edad">Edad:</label>
-            <input type="number" id="edad" name="edad" required>
-            <br>
-            <label for="Telefono">Telefono:</label>
-            <input type="number" id="phone" name="phone" required>
-            <br>
-            
-            <div class="form-buttons">
-                <button type="submit">Registrarse</button>
+<form class="registro">
+    <fieldset>
+      <legend>Formulario registro</legend>
+      <ul>
+        <li data-ayuda="Nombre de usuario para la cuenta">
+          <label><span>Usuario: *</span>
+            <div class="input-icon">
+              <input type="text" value="user1" required>
+              <img src="user.png">
             </div>
-        </form>
-    </main>
+          </label>
+        </li>
+        <li data-ayuda="Introduce una contraseña segura">
+          <label><span>Contraseña: *</span>
+            <div class="input-icon">
+              <input type="password" value="*****" required>
+              <img src="lock.png">
+            </div>
+          </label>
+        </li>
+        <li data-ayuda="Repite exactamente la misma contraseña">
+          <label><span>Repita la Contraseña: *</span>
+            <div class="input-icon">
+              <input type="password" value="*****" required>
+              <img src="lock.png">
+            </div>
+          </label>
+        </li>
+        <li data-ayuda="Correo electrónico de contacto">
+          <label><span>Email: *</span>
+            <div class="input-icon">
+              <input type="email" value="user1@mail." required>
+            </div>
+          </label>
+        </li>
+        <li data-ayuda="Nombre completo">
+          <label><span>Nombre:</span>
+            <div class="input-icon">
+              <input type="text" value="Usuario">
+            </div>
+          </label>
+        </li>
+        <li data-ayuda="Apellidos completos">
+          <label><span>Apellidos:</span>
+            <div class="input-icon">
+              <input type="text" value="Apellido Apellido Apellido">
+            </div>
+          </label>
+        </li>
+        <li data-ayuda="Edad en años">
+          <label><span>Edad:</span>
+            <div class="input-icon">
+              <input type="number" value="98">
+            </div>
+          </label>
+        </li>
+        <li data-ayuda="Número de teléfono de contacto">
+          <label><span>Teléfono: *</span>
+            <div class="input-icon">
+              <input type="tel" value="987654321" required>
+            </div>
+          </label>
+        </li>
+      </ul>
+      <button type="submit">Registrarse</button>
+    </fieldset>
+  </form>
+
 </body>
 </html>

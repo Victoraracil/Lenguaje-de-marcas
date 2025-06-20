@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <form action="pagina.php" method="post">
+        <fieldset>
+            <h1>Solicitud de informacion adicional</h1>
+            <div>
+                <label for="nombre">Nombre y apellidos:</label>
+                <input type="text" name="nombre" id="nombre" size="40">
+                <br>
+                <br>
+                <label for="nombre">DNI:</label>
+                <input type="password" name="DNI" id="DNI" size="10">
+                <br>
+                <br>
+                <label for="descripcion">Sugerencias:</label>
+                <br>
+                <textarea name="descripcion" id="descripcion" 
+                rows="5" cols="40"></textarea>
+                <br>
+                <br>
+                <input type="checkbox" name="contador" id="contador" accept="true">
+                <label for="contador">Desea recibir las novedades de la web</label>
+                <br>
+                <br>
+                <label for="calificacion">Calificacion de la web</label>
+                <select name="calificacion" id="calificacion">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>    
+                <br>
+                <label>¿Aceptar la politica de privacidad?</label>
+                <input type="radio" name="promocion" id="promocion1" 
+                value="ninguno" checked>
+                <label for="promocion1">SI</label>
+                <input type="radio" name="promocion" id="promocion2"
+                value="transporte">
+                <label for="promocion2">NO</label>
+                <br>
+                <br>
+                <input type="submit" value="Enviar consulta">            <input type="submit" value="Restablecer">
+            </div>
+        </fieldset>
+      
+    </form>
+</body>
+</html>

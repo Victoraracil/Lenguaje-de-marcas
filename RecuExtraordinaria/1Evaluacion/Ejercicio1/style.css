@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h5{
+    text-size-adjust: 14px;
+    text-align: center;
+    color: maroon;
+}
+.titulos{
+    color:maroon;
+}
+table{
+    font-family: Arial, Verdana, sans-serif;
+    line-height: 1.6;
+    margin-left: 30%;
+    border-color: white;
+    color: #684444;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    background-color: bisque;
+}

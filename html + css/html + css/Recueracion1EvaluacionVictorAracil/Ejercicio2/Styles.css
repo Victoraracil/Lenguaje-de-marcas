@@ -1,25 +1,33 @@
-/*----------------------------------*/
-
-.header {
-    font-family: sans-serif;
-    color: #2E2E2E;
-    background-color: #F2F2F2;
+body {
+  font-family: sans-serif;
+  background: #F2F2F2;
+  color: #2E2E2E;
+  padding: 20px;
 }
 
-.navigation ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+h1, h2 {
+  margin: 0;
 }
 
-.navigation ul li a {
-    color: #848484;
-    background-color: #d8d8d8;
-    border-color: #778;
+nav ul {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  list-style: none;
+  border-top: 1px solid #ccc;
 }
 
-.navigation ul li a:hover {
-    color: #000;
-    background-color: #a4a4a4;
-    border-color: #227;
+nav a {
+  display: block;
+  padding: 8px 15px;
+  background: #D8D8D8;
+  color: #848484;
+  border: 1px solid #778;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #A4A4A4;
+  color: #000;
+  border-color: #227;
 }

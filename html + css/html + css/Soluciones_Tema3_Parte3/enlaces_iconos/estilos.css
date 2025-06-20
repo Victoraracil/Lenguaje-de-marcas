@@ -1,0 +1,47 @@
+body
+{
+    font-family: Arial;
+}
+
+ul
+{
+    background-color: lightblue;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul li
+{
+    display: inline;
+    margin: 20px;
+}
+
+ul li a 
+{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-size: 2rem;
+    padding-right: 2rem;
+    color: black;
+}
+
+ul li a:hover
+{
+  background-color: lightsteelblue;
+}
+
+.facebook
+{
+    background: url('iconos/facebook.png') no-repeat 100% 1rem;  
+}
+
+.twitter
+{
+    background: url('iconos/twitter.png') no-repeat 100% 1rem;  
+}
+
+.instagram
+{
+    background: url('iconos/instagram.png') no-repeat 100% 1rem;  
+}
